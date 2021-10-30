@@ -23,19 +23,28 @@ use <database name>
 
 # Import
 ```
-mongoImport
+mongorestore --uri "<Atlas Cluster URI>"
+            --drop dump
+imports data in BSON dump
 
-mongorestore
+mongoImport  --uri "<Atlas Cluster URI>"
+             --drop=<filename>.json
+             
+imports data in JSON
 
 ```
 # Export
 ```
-mongoDump -- uri  <atlas cluster URI>
-exports data in BSON
+uri = uniform resource identifier
 
-mongoexport --uri uri  <atlas cluster URI>
+mongoDump -- uri  <atlas cluster URI>
+
+/exports data in BSON
+
+mongoexport --uri <atlas cluster URI>
             --collection = <collection name>
-            --out=<filename>.json
-exports data in JSON
+             --out=<filename>.json
+            
+/exports data in JSON
 
 ```
