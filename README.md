@@ -48,3 +48,13 @@ mongoexport --uri <atlas cluster URI>
 /exports data in JSON
 
 ```
+
+## find
+
+```
+db.<collection>.find({key and value}) 
+if you want it pretty add .pretty()
+if you want the count add .count();
+```
+
+
