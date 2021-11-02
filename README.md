@@ -58,3 +58,8 @@ if you want the count add .count();
 ```
 
 
+## adding documents to collection
+
+```
+db.<collection>.insert([{ "_id": 1, "test": 1 },{ "_id": 3, "test": 3 }])
+```
