@@ -86,3 +86,12 @@ For $set, you are able to set a specific element in the array. For $push it will
 For $set, using the array dot notation might cause unexpected result when the given element does not exists. Because $set will not create an array field but an object field. For example, if you do
 
 ```
+
+## deleting documents
+
+```
+db.<collection>.deleteOne({info})
+
+db.<collection>.deleteMany({info})
+
+```
