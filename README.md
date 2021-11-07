@@ -95,3 +95,23 @@ db.<collection>.deleteOne({info})
 db.<collection>.deleteMany({info})
 
 ```
+
+## Query Operators
+
+```
+$eq = equall
+$ne = not equal
+$gt = greater than
+$lt = less than
+$gte = greater than or equal to
+$lte = less than or equal to
+
+{<field> {<operator> : <value}}
+
+example 
+
+db.trips.find({ "tripduration": { "$lte" : 70 },
+                "usertype": { "$eq": "Customer" }}).pretty()
+                
+                
+```
